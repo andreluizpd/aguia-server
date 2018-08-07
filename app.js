@@ -5,7 +5,7 @@ const birl    = require('./code_exec.js');
 const verif   = require('./code_verification.js');
 
 var corsOptions = {
-    origin: 'https://andreluizpd.github.io'
+    origin: 'null'
 };
 
 // Permitindo CORS

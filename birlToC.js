@@ -13,9 +13,9 @@ module.exports = function (birlCode) {
     if (code == null) return "";
 
     //Traduzindo a MAIN
-    code = code.replace(/(HORA DO SHOW)(?=(?:[^"]|"[^"]*")*$)/g, 'int main (void) {'); 
+    code = code.replace(/(EAI PIAZADA)(?=(?:[^"]|"[^"]*")*$)/g, 'int main (void) {'); 
     //Traduzindo o BIRL
-    code = code.replace(/(BIRL)(?=(?:[^"]|"[^"]*")*$)/g, '}');
+    code = code.replace(/(ADEUS)(?=(?:[^"]|"[^"]*")*$)/g, '}');
     //Traduzindo printf
     code = code.replace(/(CE QUER VER ESSA PORRA[\?]?)(?=(?:[^"]|"[^"]*")*$)/g, 'printf');
     //Traduzindo scanf
