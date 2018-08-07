@@ -32,7 +32,7 @@ app.post('/compile', cors (corsOptions), function (req, res) {
         var json = JSON.parse(body);
         if (json.code == null || verif(json.code)) {
             res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify({    error: "ERRO DE COMPILAÇÃO, CUMPADI!!\n",
+            res.end(JSON.stringify({    error: "VOCE SO TA FAZENDO UM ERRO, TEM QUE IR SEM CAPACETE\n",
                                         stdout: null,
                                     }));
         }
