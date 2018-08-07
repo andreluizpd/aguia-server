@@ -33,7 +33,7 @@ module.exports = function (birlCode) {
     //Traduzindo declaração de função
     code = code.replace(/(MAGYVER EU LEMBRO DE VOCE[ \t]*\()(?=(?:[^"]|"[^"]*")*$)(.*)(\))/g, '$2 {');
     //Traduzindo retorno da função
-    code = code.replace(/(MAGYVER HOJE VOC[EÊ] [EÉ] UM HOMEM FORMADO)(?=(?:[^"]|"[^"]*")*$)/g, 'return');
+    code = code.replace(/(MAGYVER HOJE VOC[EÊ] [EÉ][H]? UM HOMEM FORMADO)(?=(?:[^"]|"[^"]*")*$)/g, 'return');
     //Traduzindo chamada de função
     code = code.replace(/(DIRETO DO TUNEL DO TEMPO)(?=(?:[^"]|"[^"]*")*$)/g, ' ');
     //Traduzindo parada no código
